@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.glass {
+    background: rgba(3, 5, 8, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #38bdf8, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flow 5s linear infinite;
+    background-size: 200% auto;
+}
+
+@keyframes flow {
+    to { background-position: 200% center; }
+}
+
+.profile-container:hover .profile-img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #030508;
+}
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #38bdf8;
+}
